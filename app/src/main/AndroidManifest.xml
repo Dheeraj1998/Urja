@@ -9,9 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ChatActivity" />
-        <activity
-            android:name=".IntroActivity"
+        <activity android:name=".ChatActivity"
             android:theme="@style/SplashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

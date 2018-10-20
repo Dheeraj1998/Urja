@@ -1,13 +1,11 @@
 package io.github.dheeraj1998.oorja;
 
-import android.app.AlarmManager;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -22,10 +20,8 @@ import java.util.List;
 import ai.api.AIConfiguration;
 import ai.api.AIDataService;
 import ai.api.AIServiceException;
-import ai.api.android.AIService;
 import ai.api.model.AIError;
 import ai.api.model.AIRequest;
-import ai.api.AIServiceContext;
 import ai.api.model.AIResponse;
 import ai.api.model.Result;
 

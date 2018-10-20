@@ -20,14 +20,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.0.1'
-
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'ai.api:libai:1.6.12'
     implementation 'ai.api:sdk:2.0.7@aar'
 
     implementation 'com.victor:lib:1.0.4'
-//    implementation 'agency.tango.android:material-intro-screen:0.0.5'
-    implementation 'com.github.AnyChart:AnyChart-Android:1.0.5'
+    implementation 'com.github.AnyChart:AnyChart-Android:1.0.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
