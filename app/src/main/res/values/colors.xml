@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BCB6FF</color>
+    <color name="colorPrimaryDark">#9C93FF</color>
+    <color name="colorAccent">#F25F5C</color>
+
+    <color name="colorTextHintWhite">#B3B3B7</color>
+    <color name="colorTextWhite">#F4F4F8</color>
+
+    <color name="intro_bg_1">#50514F</color>
+    <color name="intro_btn_1">#F25F5C</color>
+
+    <color name="intro_bg_2">#F25F5C</color>
+    <color name="intro_btn_2">#577399</color>
+
+    <color name="intro_bg_3">#577399</color>
+    <color name="intro_btn_3">#247BA0</color>
+
+    <color name="intro_bg_4">#247BA0</color>
+    <color name="intro_btn_4">#70C1B3</color>
+</resources>
