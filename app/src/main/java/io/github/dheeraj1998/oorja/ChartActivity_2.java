@@ -58,7 +58,7 @@ public class ChartActivity_2 extends AppCompatActivity {
         Mapping jumpLineData = set.mapAs("{ x: 'x', value: 'jumpLine' }");
 
         Bar bar = vertical.bar(barData);
-        bar.labels().format("${%Value} mln");
+        bar.labels().format("{%Value} Wh");
 
         JumpLine jumpLine = vertical.jumpLine(jumpLineData);
         jumpLine.stroke("2 #60727B");
@@ -73,15 +73,15 @@ public class ChartActivity_2 extends AppCompatActivity {
                 .positionMode(TooltipPositionMode.POINT)
                 .unionFormat(
                         "function() {\n" +
-                                "      return 'Plain: $' + this.points[1].value + ' mln' +\n" +
-                                "        '\\n' + 'Fact: $' + this.points[0].value + ' mln';\n" +
+                                "      return 'Plain: ' + this.points[1].value + ' Wh' +\n" +
+                                "        '\\n' + 'Fact: ' + this.points[0].value + ' Wh';\n" +
                                 "    }");
 
         vertical.interactivity().hoverMode(HoverMode.BY_X);
 
         vertical.xAxis(true);
         vertical.yAxis(true);
-        vertical.yAxis(0).labels().format("${%Value} mln");
+        vertical.yAxis(0).labels().format("{%Value} Wh");
 
         anyChartView1.setChart(vertical);
         //endregion

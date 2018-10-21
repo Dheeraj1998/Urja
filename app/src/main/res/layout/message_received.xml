@@ -8,7 +8,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/oorja_avatar" />
+        android:background="@drawable/oorja_avatar"/>
 
     <TextView
         android:id="@+id/text_message_body"

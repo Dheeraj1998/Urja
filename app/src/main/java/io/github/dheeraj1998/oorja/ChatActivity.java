@@ -6,11 +6,14 @@ import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.victor.loading.rotate.RotateLoading;
 
 import java.io.IOException;
@@ -54,7 +57,7 @@ public class ChatActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
     public void sendMessage(View view) {
         if (checkConnection(getCurrentFocus())) {
-            final AIConfiguration config = new AIConfiguration("47837cfe3577406494120309a647ebd6", AIConfiguration.SupportedLanguages.English);
+            final AIConfiguration config = new AIConfiguration("8679a839e218453eade20e1565e0fa76", AIConfiguration.SupportedLanguages.English);
             final AIRequest aiRequest = new AIRequest();
 
             query_message = message_entered.getText().toString();
@@ -107,6 +110,11 @@ public class ChatActivity extends AppCompatActivity implements TextToSpeech.OnIn
     private void onResult(AIResponse response) {
         final Result result = response.getResult();
         String agent_reply = result.getFulfillment().getSpeech();
+        Log.i("custom", result.getAction());
+
+        if(result.getAction().equals("electricity.total.usage")){
+            agent_reply = "Your total electricity usage from your devices is 10wH.";
+        }
 
         Message temp = new Message();
         temp.setMessage_content(agent_reply);
