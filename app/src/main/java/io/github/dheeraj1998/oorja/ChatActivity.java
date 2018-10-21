@@ -113,7 +113,7 @@ public class ChatActivity extends AppCompatActivity implements TextToSpeech.OnIn
         Log.i("custom", result.getAction());
 
         if(result.getAction().equals("electricity.total.usage")){
-            agent_reply = "Your total electricity usage from your devices is 10wH.";
+            agent_reply = "Your total electricity usage from your devices is 20wH.";
         }
 
         Message temp = new Message();

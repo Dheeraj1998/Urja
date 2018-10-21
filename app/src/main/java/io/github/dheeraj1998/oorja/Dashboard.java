@@ -58,7 +58,7 @@ public class Dashboard extends AppCompatActivity {
 
         circularGauge.axis(0).scale()
                 .minimum(0)
-                .maximum(1);
+                .maximum(2);
 
         circularGauge.axis(0).scale()
                 .ticks("{interval: 0.1}")
@@ -99,7 +99,7 @@ public class Dashboard extends AppCompatActivity {
         circularGauge.range(0,
                 "{\n" +
                         "    from: 0,\n" +
-                        "    to: 0.3,\n" +
+                        "    to: 0.7,\n" +
                         "    position: 'inside',\n" +
                         "    fill: 'green 0.5',\n" +
                         "    stroke: '1 #000',\n" +
@@ -111,8 +111,8 @@ public class Dashboard extends AppCompatActivity {
 
         circularGauge.range(1,
                 "{\n" +
-                        "    from: 0.7,\n" +
-                        "    to: 1,\n" +
+                        "    from: 1.6,\n" +
+                        "    to: 2,\n" +
                         "    position: 'inside',\n" +
                         "    fill: 'red 0.5',\n" +
                         "    stroke: '1 #000',\n" +
